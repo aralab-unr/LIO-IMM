@@ -23,3 +23,14 @@ The framework has been tested with ROS Noetic and Ubuntu 20.04. The following co
 ```
 
 The LIO-IMM has been tested with various LiDAR configurations, including Velodyne, Ouster, and Hesai, requiring the point cloud in the format of ```sensor_msgs::PointCloud2``` and the IMU in the format of ```sensor_msgs::IMU```. To ensure optimal performance, the LiDAR-IMU system should be well-calibrated and time-synchronized.
+
+# Install
+Clone the ``` LIO-IMM ``` repository into the catkin workspace ``` ~/catkin_ws/src/ ``` folder, and compile package (LIO-IMM supports implementation in ROS1 as default)
+
+```
+    mkdir catkin_ws && cd catkin_ws && mkdir src && cd src
+    git clone https://github.com/aralab-unr/LIO-IMM.git
+    cd ..
+    source devel/setup.bash
+    catkin_make
+```
