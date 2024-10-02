@@ -2,6 +2,10 @@
 LIO-IMM is a high-level fusion framework for multiple motion models, capable of flexibly estimating both linear and non-linear trajectories resulting from aggressive movements, using point-to-point GICP for registration. 
 The paper has been submitted to ICRA 2025 and is currently under review.
 
+<p align='center'>
+    <img src="./doc/SEM-UNR" alt="drawing" width="800"/>
+</p>
+
 # Dependencies
 The framework has been tested with ROS Noetic and Ubuntu 20.04. The following configuration, along with the required dependencies, has been verified for compatibility:
 
