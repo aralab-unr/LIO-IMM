@@ -36,7 +36,7 @@ Clone the ``` LIO-IMM ``` repository into the catkin workspace ``` ~/catkin_ws/s
 ```
 # Running
 
-Download [test data](https://drive.google.com/drive/folders/1NFlAAppbvM5jfm1xsrYEr3mfzbS9PRHb?usp=drive_link) which are collected in UNR campus for testing. The dataset is collected by using a VLP16 PuckLite and a Zedm camera. The point cloud topc is ``` "/velodyne points ```, and the IMU topic is ``` "/zed/zed_nodelet/imu/data ``` 
+Download [test data](https://drive.google.com/drive/folders/1NFlAAppbvM5jfm1xsrYEr3mfzbS9PRHb?usp=drive_link) which are collected in UNR campus for testing. The dataset is collected by using a VLP16 PuckLite and a Zedm camera. The point cloud topc is ``` "/velodyne points ```, and the IMU topic is ``` "/zed/zed_nodelet/imu/data ``` . Change the IMU topic to ``` /handsfree/imu ``` if testing with the [M2DGR](https://github.com/SJTU-ViSYS/M2DGR) 
 
 ```
     roslaunch lio-imm liom.launch \pointcloud:=/velodyne_points \imu_topic:=/zed/zed_nodelet/imu/data
@@ -44,6 +44,15 @@ Download [test data](https://drive.google.com/drive/folders/1NFlAAppbvM5jfm1xsrY
 ```
     rosbag play file-name.bag
 ```
+<p align='center'>
+    <img src="./doc/bird-eye view.png" alt="drawing" width="400"/>
+    <img src="./doc/M2DGR.png" alt="drawing" width="400"/>
+</p>
+
+<p align='center'>
+    <img src="./doc/UNR outdoor.gif" alt="drawing" width="400"/>
+    <img src="./doc/M2DGR_gate.gif" alt="drawing" width="400"/>
+</p>
 
 # Acknowledgement
 We thank the authors of [DLIO](https://github.com/vectr-ucla/direct_lidar_inertial_odometry), and [FastGICP](https://github.com/koide3/fast_gicp) for providing open-source packages:
