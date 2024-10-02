@@ -34,3 +34,25 @@ Clone the ``` LIO-IMM ``` repository into the catkin workspace ``` ~/catkin_ws/s
     source devel/setup.bash
     catkin_make
 ```
+# Running
+
+Download [test data](https://drive.google.com/drive/folders/1NFlAAppbvM5jfm1xsrYEr3mfzbS9PRHb?usp=drive_link) which are collected in UNR campus for testing. The dataset is collected by using a VLP16 PuckLite and a Zedm camera. The point cloud topc is ``` "/velodyne points ```, and the IMU topic is ``` "/zed/zed_nodelet/imu/data ``` 
+
+```
+    roslaunch lio-imm liom.launch \pointcloud:=/velodyne_points \imu_topic:=/zed/zed_nodelet/imu/data
+```
+```
+    rosbag play file-name.bag
+```
+
+# Acknowledgement
+We thank the authors of [DLIO](https://github.com/vectr-ucla/direct_lidar_inertial_odometry), and [FastGICP](https://github.com/koide3/fast_gicp) for providing open-source packages:
+
+- K. Chen, R. Nemiroff and B. T. Lopez, "Direct LiDAR-Inertial Odometry: Lightweight LIO with Continuous-Time Motion Correction," 2023 IEEE International Conference on Robotics and Automation (ICRA), London, United Kingdom, 2023, pp. 3983-3989, doi: 10.1109/ICRA48891.2023.10160508.
+
+- Kenji Koide, Masashi Yokozuka, Shuji Oishi, and Atsuhiko Banno, “Voxelized GICP for Fast and Accurate 3D Point Cloud Registration,” in IEEE International Conference on Robotics and Automation (ICRA), IEEE, 2021, pp. 11 054–11 059.
+
+# Contact
+- [An Nguyen](mailto:anguyenduy@nevada.unr.edu)
+- [Hung La](mailto:hla@unr.ed
+
