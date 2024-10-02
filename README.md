@@ -3,7 +3,7 @@ LIO-IMM is a high-level fusion framework for multiple motion models, capable of 
 The paper has been submitted to ICRA 2025 and is currently under review.
 
 <p align='center'>
-    <img src="./doc/SEM-UNR" alt="drawing" width="800"/>
+    <img src="./doc/SEM-UNR.png" alt="drawing" width="800"/>
 </p>
 
 # Dependencies
