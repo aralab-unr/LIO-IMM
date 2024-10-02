@@ -18,7 +18,8 @@ The framework has been tested with ROS Noetic and Ubuntu 20.04. The following co
 - [ZED SDK >= 3.5](https://www.stereolabs.com/developers)
 - [CUDA](https://developer.nvidia.com/cuda-downloads) (Recommend to use CUDA toolkit >= 11 for Ubuntu 20.04)
 
-...
+```
     sudo apt install libomp-dev libpcl-dev libeigen3-dev
+```
 
 The LIO-IMM has been tested with various LiDAR configurations, including Velodyne, Ouster, and Hesai, requiring the point cloud in the format of ```sensor_msgs::PointCloud2``` and the IMU in the format of ```sensor_msgs::IMU```. To ensure optimal performance, the LiDAR-IMU system should be well-calibrated and time-synchronized.
