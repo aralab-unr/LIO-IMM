@@ -63,5 +63,5 @@ We thank the authors of [DLIO](https://github.com/vectr-ucla/direct_lidar_inerti
 
 # Contact
 - [An Nguyen](mailto:anguyenduy@nevada.unr.edu)
-- [Hung La](mailto:hla@unr.ed
+- [Hung La](mailto:hla@unr.edu)
 
